@@ -3,7 +3,7 @@
 [TimescaleDB](https://docs.timescale.com/timescaledb/latest/) is PostgreSQL extension that improves Zabbix' Housekeeper performance by orders of magnitude. 
 It replaces the partitioning scripts that we used to use for this purpose, in an elegant and efficient way. 
 
-Zabbix integrates with it seamlessly, you can configure the retention period directly on the web interface.
+Zabbix integrates with it seamlessly, you can configure the retention periods directly on the web interface.
 ![image](https://user-images.githubusercontent.com/87875608/194992981-7431e9ab-ba0f-4dd6-94e9-aeaabcb6a070.png)
 
 The `restore.sh` script allows you to restore a backup made with `backup.sh` with minimal downtime, since all the "history" and "trends" data are restored later, after your Zabbix Server has been started (optional). 
