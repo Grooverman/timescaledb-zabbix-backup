@@ -142,7 +142,8 @@ echo ""
 echo "Restoring trends data..."
 for table in $trends_tables
 do
-	# check if zabbix-server has been started during the restore
+	# deal, if necessary, with zabbix-server having been started
+	# during the restore
 	declare -i oldest_record=$(
 		echo "SELECT clock FROM $table ORDER BY clock ASC LIMIT 1;" \
 		| sudo -u postgres psql -qtAX $database)
