@@ -65,4 +65,9 @@ do
         tar -rf $output $table.csv.gz --remove-files
 done
 
+# add README text file
+restore_url="https://github.com/Grooverman/timescaledb-zabbix-backup/blob/main/restore.sh"
+echo "Use [restore.sh]($restore_url) to restore this backup." >README.md
+tar -rf $output README.md --remove-files
+
 echo "Done."
