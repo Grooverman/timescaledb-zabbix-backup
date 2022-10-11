@@ -1,6 +1,6 @@
 # TimescaleDB Conversion, Backup and Restore Tool for Zabbix Databases.
 
-[TimescaleDB](https://docs.timescale.com/timescaledb/latest/) is PostgreSQL extension that improves Zabbix' Housekeeper performance by orders of magnitude. 
+[TimescaleDB](https://docs.timescale.com/timescaledb/latest/) is a PostgreSQL extension that improves Zabbix' Housekeeper performance by orders of magnitude. 
 It replaces the partitioning scripts that we used to use for this purpose, in an elegant and efficient way. 
 
 Zabbix integrates with it seamlessly, you can configure the retention periods directly on the web interface.
