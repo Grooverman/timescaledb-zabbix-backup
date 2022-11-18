@@ -58,6 +58,9 @@ echo "Extracting files..."
 sudo tar -xvf $backup_file -C $backup_dir || exit 1
 echo ""
 
+# change to backup dir
+cd $backup_dir
+
 # try to create database
 sudo -u postgres \
 	createdb -O $dbuser -E Unicode -T template0 $database &>/dev/null
